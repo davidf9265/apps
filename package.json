@@ -2,7 +2,15 @@
   "name": "@front-dfws/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "dev:ai": "nx run ai-chat:dev",
+    "dev": "nx run-many --target=dev --all",
+    "build": "nx run-many --target=build --all",
+    "serve": "nx run-many --target=serve --all",
+    "lint": "nx run-many --target=lint --all",
+    "test": "nx run-many --target=test --all",
+    "e2e": "nx run-many --target=e2e --all"
+  },
   "private": true,
   "dependencies": {
     "next": "14.0.4",
