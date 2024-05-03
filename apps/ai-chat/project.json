@@ -1,8 +1,0 @@
-{
-  "name": "ai-chat",
-  "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/ai-chat",
-  "projectType": "application",
-  "targets": {},
-  "tags": []
-}
