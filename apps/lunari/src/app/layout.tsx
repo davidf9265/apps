@@ -1,5 +1,15 @@
-import { NextUIProvider } from '@nextui-org/react';
+import {
+  NextUIProvider,
+  Navbar,
+  NavbarBrand,
+  NavbarContent,
+  NavbarItem,
+  Link,
+  Button,
+} from '@nextui-org/react';
+
 import './global.css';
+import { default as AppHeader } from '../components/Header/Header';
 
 export const metadata = {
   title: 'Welcome to lunari',
@@ -14,7 +24,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <NextUIProvider>{children}</NextUIProvider>
+        <NextUIProvider>
+          <AppHeader />
+          <main className="dark">{children}</main>
+          <footer></footer>
+        </NextUIProvider>
       </body>
     </html>
   );
